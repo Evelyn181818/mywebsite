@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Profile</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h1>Hi Harfi, Welcome To Website</h1>
+            <p>Ini adalah website latihan pertama</p>
+            <div class="image-placeholder">1360x578</div>
+        </section>
+
+        <section class="headquarter">
+            <h2>Our Headquarter</h2>
+            <div class="locations">
+                <div class="location">Jakarta</div>
+                <div class="location">Bandung</div>
+                <div class="location">Surabaya</div>
+            </div>
+        </section>
+
+        <section class="message-us">
+            <h2>Message Us</h2>
+            <form id="messageForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="birthdate">Tanggal Lahir:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+
+                <label>Jenis Kelamin:</label>
+                <label><input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki</label>
+                <label><input type="radio" name="gender" value="Perempuan" required> Perempuan</label>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="messageOutput"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by RevoU</p>
+    </footer>
+</body>
+</html>
